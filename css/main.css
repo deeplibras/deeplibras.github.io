@@ -1,10 +1,20 @@
+/* Reset margin and padding and configure default font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+/* Import custom fonts */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
+
 html, body {
-	background-image: url("../images/background-collaboration.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	font-family: "Raleway";
+	font-family: "Open Sans";
 
 	padding: 0px;
 	margin: 0px;
@@ -21,20 +31,27 @@ html, body {
 /*********************************************
  * Header
  *********************************************/
+.wrap-header {
+	background-color: #083547;
+	display: flex;
+}
 
 .header {
-	padding: 15px;
-	text-align: right;
+	width: 1000px;
+	padding: 15px 0;
+	margin: 0 auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .header menu {
 	vertical-align: middle;
 	list-style: none;
 	display: inline;
-	color: #314559;
 	padding: 0px;
 	margin: 0px;
-	width: 50%;
+	margin-right: auto;
 }
 
 .header menu li {
@@ -48,23 +65,29 @@ html, body {
 	text-decoration: none;
 	font-weight: bold;
 	padding: 10px;
-	color: #314559;
+	color: #FFFFFF;
 }
 
 .header menu li a:hover {
-	background-color: #832e4f;
+	background-color: #1a7ea7;
 	color: white;
 }
 
 .header menu li a.active {
-	background-color: #832e4f;
+	background-color: #1a7ea7;
 	color: white;
 }
 
 .header .flags {
 	display: inline-block;
 	margin-right: 40px;
-	float: right;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.header .flags a {
+	margin-left: 15px;
 }
 
 /*********************************************
@@ -72,9 +95,8 @@ html, body {
  *********************************************/
 
 .image-container {
-	background-image: url("../images/pattern.jpg");
 	background-repeat: repeat;
-	background-color: #933b51;
+	background-color: #1a7ea7;
 	padding-bottom: 20px;
 	text-align: center;
 	padding-top: 20px;
@@ -127,7 +149,7 @@ html, body {
 	font-weight: bold;
 	width: 100%;
 	text-align: center;
-	color: #832e4f;
+	color: #1a7ea7;
 	padding-bottom: 5px;
 }
 
@@ -208,7 +230,7 @@ html, body {
   text-align: center;
   width: 100%;
   bottom: 0px;
-  color: #3333333;
+  color: #333333;
   font-weight: bold;
   height: 40px;
   display: block;
