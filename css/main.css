@@ -176,12 +176,12 @@ html, body {
 	bottom: 0px;
 	width: 100%;
 	height: 60px; /* Height of the footer */
-	color: white;
+	color: #666;
 }
 
 .footer p {
 	background-color: transparent;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #AAA;
 	margin-right: auto;
 	margin-left: auto;
 	font-size: small;
