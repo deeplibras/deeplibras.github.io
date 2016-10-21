@@ -1,3 +1,11 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
 /* Import custom fonts */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
 
@@ -30,9 +38,28 @@ button.next {
     float: right;
 }
 
+/* HEADER */
+.header {
+    width: 100%;
+    background-color: #1a7ea7;
+    text-align: center;
+    font-size: 45px;
+    padding: 15px 0;
+}
+
+.header a {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
 
 /* CONTENT */
-.content {
+.wrap-content {
     width: 1000px;
     margin: 0 auto;
 }
