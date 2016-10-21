@@ -1,3 +1,6 @@
+/* Import custom fonts */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
+
 /* Reset margin and padding and configure default font */
 * {
     margin: 0;
@@ -5,9 +8,6 @@
     font-family: 'Open Sans';
     font-weight: 300;
 }
-
-/* Import custom fonts */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
 
 html, body {
 	background-attachment: fixed;
@@ -33,61 +33,55 @@ html, body {
  *********************************************/
 .wrap-header {
 	background-color: #083547;
-	display: flex;
 }
 
 .header {
-	width: 1000px;
-	padding: 15px 0;
+	max-width: 1000px;
 	margin: 0 auto;
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .header menu {
-	vertical-align: middle;
 	list-style: none;
-	display: inline;
-	padding: 0px;
-	margin: 0px;
+	display: flex;
 	margin-right: auto;
+	flex-wrap: wrap;
 }
 
 .header menu li {
-	display: inline;
-	padding: 15px;
 	vertical-align: middle;
 }
 
 .header menu li a {
-	padding: 10px;
+	display: block;
+	padding: 15px;
 	text-decoration: none;
 	font-weight: bold;
-	padding: 10px;
 	color: #FFFFFF;
 }
 
-.header menu li a:hover {
+.header menu li:hover {
 	background-color: #1a7ea7;
 	color: white;
 }
 
-.header menu li a.active {
+.header menu li.active {
 	background-color: #1a7ea7;
 	color: white;
 }
 
 .header .flags {
-	display: inline-block;
-	margin-right: 40px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
 
 .header .flags a {
-	margin-left: 15px;
+	align-self: center;
+	margin-right: 15px;
 }
 
 /*********************************************
@@ -121,27 +115,34 @@ html, body {
  *********************************************/
 
 .content {
-	padding-top: 10px;
+	padding: 10px;
 	padding-bottom: 60px; /* Height of the footer */
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
 }
-
 
 .content .box-container {
 	text-align: center;
 	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .content .box-container .box {
 	background-size: 100% 100%;
-	width: 300px;
-	height: 200px;
+	flex: 1;
 	display: inline-block;
 	vertical-align: top;
-	margin: 15px;
 	padding: 10px;
 	border-radius: 10px;
 	background-color: rgba(255, 225, 225, .5);
 	color: white;
+}
+
+.content .box-container .box:nth-child(2) {
+	margin: 0 15px;
 }
 
 .content .box-container .box h1 {
@@ -193,6 +194,7 @@ html, body {
  * Team
  *********************************************/
  .team {
+	flex: 1;
  	display: block;
  	text-align: center;
  }
@@ -244,24 +246,25 @@ html, body {
  * Contact
  *********************************************/
  .contact {
- 	margin-top: 15px;
- 	display: block;
- 	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
  }
  
  .contact ul, .contact iframe {
  	vertical-align: top;
  	margin-top: 10px;
+	flex: 1;
  }
  
  .contact ul {
-	width: 45%;
 	display: inline-block;
 	padding: 10px;
 	padding-top: 0px;
 	background-color: rgba(200, 200, 200, 0.45);
 	border-radius: 10px;
-	min-width: 400px;
 	height: 250px;
  }
  
@@ -270,7 +273,6 @@ html, body {
  	display: block;
  	text-align: left;
  	padding-left: 40px;
- 	vertical-align: middle;
 	background-position: left top;
  	font-size: medium;
  	margin-top: 10px;
@@ -299,12 +301,26 @@ html, body {
  }
  
  .contact .map {
- 	height: 200px;
  	width: 45%;
  	border: 0px;
  	display: inline-block;
  	border: 5px solid white;
  	border-radius: 10px;
- 	min-width: 400px;
  	height: 250px;
  }
+
+ @media (max-width: 600px) 
+{  
+    .header menu {
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	.header menu li {
+		width: 100%;
+	}
+
+	.header .flags {
+		margin: 15px 0;
+	}
+}

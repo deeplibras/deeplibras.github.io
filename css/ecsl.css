@@ -1,16 +1,16 @@
-/* Import custom fonts */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
-
 /* Configure default elements */
 a {
     color: #1a7ea7;
 }
+
 a:hover {
     color: #0a3d4c;
 }
+
 p {
     margin-bottom: 10px;
 }
+
 button {
     float: left;
     color: #FFF;
@@ -30,22 +30,14 @@ button.next {
     float: right;
 }
 
-
-/* CONTENT */
-.content {
-    width: 1000px;
-    margin: 0 auto;
-}
-
 /* Session blocks */
 .session {
-    width: 480px;
+    flex: 1;
     margin-bottom: 15px;
 }
 
 .full-content {
-    width: 1000px;
-    clear: both;
+    min-width: 100%;
 }
 
 .session h1{
@@ -57,11 +49,11 @@ button.next {
     font-weight: 400;
 }
 
-/* List */
-.list {
-    float: left;
+.committe {
+    margin-left: 15px;
 }
 
+/* List */
 .list ul {
     margin-bottom: 15px;
 }
@@ -71,29 +63,25 @@ button.next {
 }
 
 .events {
-    float: right
+    margin-left: 15px;
 }
 
 /* Gallery */
 .gallery {
-    float: left;
+    margin-right: auto;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .gallery ul li {
     list-style: none;
-    float: left;
-    width: 150px;
-    height: 150px;
-    margin-right: 15px;
     margin-bottom: 15px;
 }
 
-.gallery ul li:nth-child(3n+3) {
-    margin-right: 0px;
-}
-
 .gallery img {
-    float: left;
-    width: 155px;
-    height: 150px;
+    max-width: 150px;
 }
