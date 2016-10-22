@@ -103,7 +103,6 @@ html, body {
 	padding-bottom: 60px; /* Height of the footer */
 }
 
-
 .content .box-container {
 	text-align: center;
 	margin-top: 10px;
@@ -143,6 +142,132 @@ html, body {
 	font-weight: bold;
 	color: #CC0000;
 	text-shadow: none;
+}
+
+.content .box-container .box a:hover {
+	text-decoration: underline;
+}
+
+.content .box-container .box-half {
+	min-width: 400px;
+	width: 35%;
+	height: auto;
+}
+
+.content .box-container .box-full {
+	min-width: 400px;
+	width: 75%;
+	height: auto;
+}
+
+.content .event-container .box ul {
+	text-align: left;
+	list-style: none;
+	font-size: 11pt;
+	font-weight: normal;
+}
+
+.content .event-container .box ul li {
+	line-height: 25px;
+}
+
+.content .ecsl-container .box ul {
+	text-align: left;
+	list-style: none;
+	font-size: medium;
+	line-height: 1.5;
+	color: black;
+}
+
+.content .ecsl-container .apoio a {
+	display: inline-table;
+	margin: 10px;
+	padding: 10px;
+	width: 125px;
+	border-radius: 5px;
+	color: black;
+	font-weight: normal;
+}
+
+.content .ecsl-container .apoio a:hover {
+	background: rgba(255, 255, 255, .5);
+	text-decoration: none;
+}
+
+.content .ecsl-container .apoio figure {
+	margin: 0;
+	padding: 0;
+}
+
+.content .ecsl-container .apoio figure img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+.content .ecsl-container .apoio figure figcaption {
+	margin-top: 5px;
+}
+
+/*********************************************
+ * Gallery and Event
+ *********************************************/
+
+.box-container .gallery div {
+	width: 340px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.box-container .gallery ul {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.box-container .gallery ul li {
+	text-align: center;
+	display: inline;
+}
+ 
+.box-container .gallery ul li img {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	padding: 0;
+}
+
+.box-container .gallery button, .box-container .event button {
+	cursor: pointer;
+	visibility: visible;
+	font-family: "Raleway";
+	font-size: 12pt;
+	font-weight: bold;
+	color: #314559;
+	background: none;
+	border: 0;
+	padding: 10px;	
+	margin: 0;
+}
+
+.box-container .gallery button:hover, .box-container .event button:hover {
+	background-color: #832e4f;
+	color: white;
+}
+
+.box-container .gallery button:disabled, .box-container .event button:disabled {
+	color: #eee;
+	visibility: hidden;
+}
+
+.box-container .gallery button.galleryPrevious, .box-container .event button.eventsPrevious {
+	float: left;
+	margin-left: 20px;
+}
+
+.box-container .gallery button.galleryNext, .box-container .event button.eventsNext {
+	float: right;
+	margin-right: 20px;
 }
 
 /*********************************************
