@@ -323,4 +323,13 @@ html, body {
 	.header .flags {
 		margin: 15px 0;
 	}
+
+	.content .box-container .box {
+		margin-top: 15px;
+	}
+
+	.content .box-container .box:nth-child(2) {
+		margin: 0 15px;
+		margin-top: 15px;
+	}
 }
