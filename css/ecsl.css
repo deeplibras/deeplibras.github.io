@@ -85,3 +85,10 @@ button.next {
 .gallery img {
     max-width: 150px;
 }
+
+@media (max-width: 600px) 
+{  
+    .committe {
+        margin-left: 0;
+    }
+}

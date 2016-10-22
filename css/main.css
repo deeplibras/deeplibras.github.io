@@ -309,7 +309,7 @@ html, body {
  	height: 250px;
  }
 
- @media (max-width: 600px) 
+@media (max-width: 600px) 
 {  
     .header menu {
 		margin-top: 15px;
