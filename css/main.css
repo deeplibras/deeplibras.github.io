@@ -1,25 +1,24 @@
 /* Import custom fonts */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400';
+@import
+	'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400'
+	;
 
 /* Reset margin and padding and configure default font */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans';
-    font-weight: 300;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+	font-weight: 300;
 }
 
 html, body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 	font-family: "Open Sans";
-
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
-	
 	display: block;
 }
 
@@ -87,7 +86,6 @@ html, body {
 /*********************************************
  * Title
  *********************************************/
-
 .image-container {
 	background-repeat: repeat;
 	background-color: #1a7ea7;
@@ -113,7 +111,6 @@ html, body {
 /*********************************************
  * Content
  *********************************************/
-
 .content {
 	padding: 10px;
 	padding-bottom: 60px; /* Height of the footer */
@@ -125,13 +122,15 @@ html, body {
 
 .content h1 {
 	font-size: 16pt;
-	font-weight: bold;
+	font-weight: 400;
 	margin-bottom: 8px;
 	margin-top: 8px;
+	color: #1a7ea7;	
 }
 
 .content p {
 	line-height: 1.5;
+	margin-bottom: 12px;
 }
 
 .content .box-container {
@@ -182,7 +181,6 @@ html, body {
 /*********************************************
  * Footer
  *********************************************/
-
 .footer {
 	position: absolute;
 	bottom: 0px;
@@ -204,29 +202,29 @@ html, body {
 /*********************************************
  * Team
  *********************************************/
- .team {
+.team {
 	flex: 1;
- 	display: block;
- 	text-align: center;
- }
- 
- .team .role-group {
- 	display: block;
- }
- 
- .team .role-group h1 {
- 	font-size: x-large;
- }
- 
+	display: block;
+	text-align: center;
+}
+
+.team .role-group {
+	display: block;
+}
+
+.team .role-group h1 {
+	font-size: x-large;
+}
+
 .team .role-group figure {
-  background-color: transparent;
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  margin: 5px;
-  height: 150px;	
-  padding: 5px; 
-  vertical-align: top;
+	background-color: transparent;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	margin: 5px;
+	height: 150px;
+	padding: 5px;
+	vertical-align: top;
 }
 
 .team .role-group figure img {
@@ -238,107 +236,101 @@ html, body {
 	margin-bottom: 5px;
 	border-radius: 100%;
 }
- 
+
 .team .role-group figure figcaption {
-  text-align: center;
-  width: 100%;
-  bottom: 0px;
-  color: #333333;
-  font-weight: bold;
-  height: 40px;
-  display: block;
-  font-size: 10pt;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
+	text-align: center;
+	width: 100%;
+	bottom: 0px;
+	color: #333333;
+	font-weight: bold;
+	height: 40px;
+	display: block;
+	font-size: 10pt;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*********************************************
  * Contact
  *********************************************/
- .contact {
+.contact {
 	width: 100%;
 	margin-top: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
- }
- 
- .contact ul, .contact iframe {
- 	vertical-align: top;
- 	margin-top: 10px;
+}
+
+.contact ul, .contact iframe {
+	vertical-align: top;
+	margin-top: 10px;
 	flex: 1;
- }
- 
- .contact ul {
+}
+
+.contact ul {
 	display: inline-block;
 	padding: 10px;
 	padding-top: 0px;
 	background-color: rgba(200, 200, 200, 0.45);
 	border-radius: 10px;
 	height: 250px;
- }
- 
- .contact ul li {
- 	padding: 0px;
- 	display: block;
- 	text-align: left;
- 	padding-left: 40px;
-	background-position: left top;
- 	font-size: medium;
- 	margin-top: 10px;
- 	min-height: 24px;
- 	
- }
- 
- .contact ul li.title {
- 	padding-left: 0px;
- }
- 
- .contact ul li.email {
- 	background-image: url("../images/email.png");
- 	background-repeat: no-repeat;
- }
- 
- .contact ul li.phone {
- 	background-image: url("../images/phone.png");
- 	background-repeat: no-repeat;
- }
- 
- .contact ul li.address {
- 	background-image: url("../images/address.png");
- 	background-repeat: no-repeat;
- 	line-height: 1.5;
- }
- 
- .contact .map {
- 	width: 45%;
- 	border: 0px;
- 	display: inline-block;
- 	border: 5px solid white;
- 	border-radius: 10px;
- 	height: 250px;
- }
+}
 
-@media (max-width: 600px) 
-{  
-    .header menu {
+.contact ul li {
+	padding: 0px;
+	display: block;
+	text-align: left;
+	padding-left: 40px;
+	background-position: left top;
+	font-size: medium;
+	margin-top: 10px;
+	min-height: 24px;
+}
+
+.contact ul li.title {
+	padding-left: 0px;
+}
+
+.contact ul li.email {
+	background-image: url("../images/email.png");
+	background-repeat: no-repeat;
+}
+
+.contact ul li.phone {
+	background-image: url("../images/phone.png");
+	background-repeat: no-repeat;
+}
+
+.contact ul li.address {
+	background-image: url("../images/address.png");
+	background-repeat: no-repeat;
+	line-height: 1.5;
+}
+
+.contact .map {
+	width: 45%;
+	border: 0px;
+	display: inline-block;
+	border: 5px solid white;
+	border-radius: 10px;
+	height: 250px;
+}
+
+@media ( max-width : 600px) {
+	.header menu {
 		margin-top: 15px;
 		width: 100%;
 	}
-
 	.header menu li {
 		width: 100%;
 	}
-
 	.header .flags {
 		margin: 15px 0;
 	}
-
 	.content .box-container .box {
 		margin-top: 15px;
 	}
-
 	.content .box-container .box:nth-child(2) {
 		margin: 0 15px;
 		margin-top: 15px;
