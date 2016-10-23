@@ -1,4 +1,17 @@
 $(function() {
+	
+	$.ajax({
+		url : "./footer.html",
+		method : "GET",
+		async: false,
+		xhrFields : {
+			withCredentials : true
+		}
+
+	}).done(function(data) {
+		$(".content").after(data);
+	});
+	
 	$(".header menu li a").each(function() {
 		$(this).click(function() {
 
