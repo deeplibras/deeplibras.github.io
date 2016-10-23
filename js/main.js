@@ -16,9 +16,9 @@ $(function() {
 				$(".content").html(data);
 			});
 			
-			$(".header menu li a.active").removeClass("active");
+			$(".header menu li.active").removeClass("active");
 			
-			$(this).addClass("active");
+			$(this).parent().addClass("active");
 		})
 	});
 
@@ -35,7 +35,7 @@ $(function() {
 		url : url,
 		method : "GET"
 	}).done(function(data) {
-		$("a[accesskey=" + section + "]").addClass("active");
+		$("a[accesskey=" + section + "]").parent().addClass("active");
 		$(".content").html(data);
 	});
 });
