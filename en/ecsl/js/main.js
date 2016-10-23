@@ -1,4 +1,17 @@
 $(function() {
+	
+	$.ajax({
+		url : "../footer.html",
+		method : "GET",
+		async: false,
+		xhrFields : {
+			withCredentials : true
+		}
+
+	}).done(function(data) {
+		$(".content").after(data);
+	});
+	
 	var url = "home.html";
 
 	var section = window.location.hash.substr(1);

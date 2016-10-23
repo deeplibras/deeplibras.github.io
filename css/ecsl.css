@@ -36,6 +36,10 @@ button.next {
     margin-bottom: 15px;
 }
 
+.session * b {
+	font-weight: bold;
+}
+
 .full-content {
     min-width: 100%;
 }
@@ -60,6 +64,8 @@ button.next {
 
 .list ul li {
     list-style: none;
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 .events {
