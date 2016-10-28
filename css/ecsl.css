@@ -34,6 +34,7 @@ button.next {
 .session {
     flex: 1;
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 .session * b {
@@ -59,13 +60,18 @@ button.next {
 
 /* List */
 .list ul {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    width: 95%;
 }
 
 .list ul li {
     list-style: none;
-    margin-left: 15px;
+    margin-right: 10px;
     margin-bottom: 5px;
+}
+
+.list ul.signal li {
+	display: inline-block;
 }
 
 .events {
@@ -91,9 +97,22 @@ button.next {
     overflow: hidden;
 }
 
-.gallery img {
-    max-width: 100%;
-    max-height: 100%;
+.gallery ul li a {
+   display: inline-block;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 5px;
+   transition: 0.3s;
+}
+
+.gallery ul li a:hover {
+   box-shadow: 0 0 2px 1px rgba (0, 140, 186, 0.5);
+}
+
+.gallery ul li a img {
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: 8px;
 }
 
 @media (max-width: 600px) 

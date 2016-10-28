@@ -30,20 +30,24 @@ function galleryPreviousPage() {
 
 function verifyGalleryButton() {
     if(ulGallery.length == 0) {
-        $('.galleryNext').prop('disabled', true);
-        $('.galleryPrevious').prop('disabled', true);
+    	
+        $('.galleryNext').prop('disabled', true).css('display', 'none');
+        
+        $('.galleryPrevious').prop('disabled', true).css('display', 'none');
+    
     } else {
-        if(galleryPage == ulGallery.length - 1) {
-            $('.galleryNext').prop('disabled', true);
-        } else {
-            $('.galleryNext').prop('disabled', false);
-        }
+        
+    	if(galleryPage == ulGallery.length - 1)
+            $('.galleryNext').prop('disabled', true).css('display', 'none');
+        
+        else
+            $('.galleryNext').prop('disabled', false).css('display', 'inline-block');
 
-        if(galleryPage == 0) {
-            $('.galleryPrevious').prop('disabled', true);
-        } else {
-            $('.galleryPrevious').prop('disabled', false);
-        }
+        if(galleryPage < 1)
+            $('.galleryPrevious').prop('disabled', true).css('display', 'none');
+        
+        else
+            $('.galleryPrevious').prop('disabled', false).css('display', 'inline-block');
     }
 }
 
@@ -68,19 +72,19 @@ function eventsPreviousPage() {
 
 function verifyEventsButton() {
     if(ulEvent.length == 0) {
-        $('.eventsNext').prop('disabled', true);
-        $('.eventsPrevious').prop('disabled', true);
+        $('.eventsNext').prop('disabled', true).css('display', 'none');
+        $('.eventsPrevious').prop('disabled', true).css('display', 'none');
     } else {
         if(eventsPage == ulEvent.length - 1) {
-            $('.eventsNext').prop('disabled', true);
+            $('.eventsNext').prop('disabled', true).css('display', 'none');
         } else {
-            $('.eventsNext').prop('disabled', false);
+            $('.eventsNext').prop('disabled', false).css('display', 'inline-block');
         }
 
         if(eventsPage == 0) {
-            $('.eventsPrevious').prop('disabled', true);
+            $('.eventsPrevious').prop('disabled', true).css('display', 'none');
         } else {
-            $('.eventsPrevious').prop('disabled', false);
+            $('.eventsPrevious').prop('disabled', false).css('display', 'inline-block');
         }
     }
 }

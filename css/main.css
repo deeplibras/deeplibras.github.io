@@ -249,7 +249,9 @@ html, body {
 }
 
 .team .role-group {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
+	margin: 25px;
 }
 
 .team .role-group h1 {
@@ -296,10 +298,8 @@ html, body {
  *********************************************/
 .contact {
 	width: 100%;
-	margin-top: 15px;
-	display: flex;
+	display: block;
 	flex-wrap: wrap;
-	text-align: center;
 }
 
 .contact ul, .contact iframe {
@@ -309,23 +309,25 @@ html, body {
 }
 
 .contact ul {
-	display: inline-block;
+	display: block;
 	padding: 10px;
 	padding-top: 0px;
-	background-color: rgba(200, 200, 200, 0.45);
 	border-radius: 10px;
-	height: 250px;
+	text-align: center;
 }
 
 .contact ul li {
 	padding: 0px;
-	display: block;
+	display: inline-block;
 	text-align: left;
 	padding-left: 40px;
 	background-position: left top;
-	font-size: medium;
+ 	font-size: medium;
 	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
 	min-height: 24px;
+	vertical-align: top;
 }
 
 .contact ul li.title {
@@ -349,7 +351,7 @@ html, body {
 }
 
 .contact .map {
-	width: 45%;
+	width: 100%;
 	border: 0px;
 	display: inline-block;
 	border: 5px solid white;
