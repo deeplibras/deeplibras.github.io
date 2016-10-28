@@ -1,9 +1,8 @@
-$(function() {
+$(document).ready(function() {
 	
 	$.ajax({
 		url : "../footer.html",
 		method : "GET",
-		async: false,
 		xhrFields : {
 			withCredentials : true
 		}
@@ -11,7 +10,7 @@ $(function() {
 	}).done(function(data) {
 		$(".content").after(data);
 	});
-	
+
 	var url = "home.html";
 
 	var section = window.location.hash.substr(1);
@@ -25,9 +24,9 @@ $(function() {
 		url : url,
 		method : "GET"
 	}).done(function(data) {
+		
 		$(".content").html(data);
-
-		// Wait home content load to add events actions
+		
 		$(".events ul li a").each(function() {
 			$(this).click(function() {
 				var page = $(this).attr("accesskey");
@@ -41,9 +40,11 @@ $(function() {
 					}
 
 				}).done(function(data) {
+					
 					$(".content").html(data);
-				});
-			})
+				})
+			});
 		});
 	});
 });
+	

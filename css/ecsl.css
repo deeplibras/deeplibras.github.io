@@ -8,7 +8,7 @@ a:hover {
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 button {
@@ -115,8 +115,7 @@ button.next {
    border-radius: 8px;
 }
 
-@media (max-width: 600px) 
-{  
+@media (max-width: 600px) {  
     .committe {
         margin-left: 0;
     }
