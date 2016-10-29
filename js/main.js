@@ -51,7 +51,17 @@ function onLoad() {
 		$("menu li").removeClass("active");
 		$("a[accesskey=" + section + "]").parent().addClass("active");
 		$(".content").html(data);
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
+	
+	$(".flags a").each(function() {
+
+		$(this).click(function(e) {
+			e.preventDefault();
+			window.location.href = $(this).attr("href") + window.location.hash
+			return false;
+		})
+	})
 }
 
 $(window).ready(function() {

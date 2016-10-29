@@ -40,10 +40,21 @@ function onLoadEvent() {
 
 				}).done(function(data) {
 					$(".content").html(data);
+					$("html, body").animate({ scrollTop: 0 }, "slow");
+					$("html, body").animate({ scrollTop: 0 }, "slow");
 				})
 			});
 		});
 	});
+	
+	$(".flags a").each(function() {
+
+		$(this).click(function(e) {
+			e.preventDefault();
+			window.location.href = $(this).attr("href") + window.location.hash
+			return false;
+		})
+	})
 }
 
 $(window).ready(function() {
