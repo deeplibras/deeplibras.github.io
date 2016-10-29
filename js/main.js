@@ -1,9 +1,8 @@
-$(function() {
+function onLoad() {
 	
 	$.ajax({
 		url : "./footer.html",
 		method : "GET",
-		async: false,
 		xhrFields : {
 			withCredentials : true
 		}
@@ -48,7 +47,21 @@ $(function() {
 		url : url,
 		method : "GET"
 	}).done(function(data) {
+		
+		$("menu li").removeClass("active");
 		$("a[accesskey=" + section + "]").parent().addClass("active");
 		$(".content").html(data);
 	});
+}
+
+$(window).ready(function() {
+	onLoad();
+});
+
+$(window).on('hashchange', function() {
+	onLoad();
+});
+
+$(window).on("navigate", function () {
+	onLoad();
 });

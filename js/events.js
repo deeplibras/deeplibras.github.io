@@ -1,5 +1,4 @@
-$(document).ready(function() {
-	
+function onLoadEvent() {
 	$.ajax({
 		url : "../footer.html",
 		method : "GET",
@@ -40,11 +39,23 @@ $(document).ready(function() {
 					}
 
 				}).done(function(data) {
-					
 					$(".content").html(data);
 				})
 			});
 		});
 	});
+}
+
+$(window).ready(function() {
+	onLoadEvent();
 });
+
+$(window).on("hashchange", function () {
+	onLoadEvent();
+});
+
+$(window).on("navigate", function () {
+	onLoadEvent();
+});
+
 	
