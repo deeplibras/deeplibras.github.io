@@ -32,7 +32,6 @@ button.next {
 
 /* Session blocks */
 .session {
-    flex: 1;
     margin-bottom: 15px;
     display: inline-block;
 }
@@ -75,11 +74,13 @@ button.next {
 }
 
 .events {
-    margin-left: 15px;
+	width: 48%;
+    margin-left: 1%;
 }
 
 /* Gallery */
 .gallery {
+	width: 48%;
     margin-right: auto;
 }
 
@@ -115,8 +116,9 @@ button.next {
    border-radius: 8px;
 }
 
-@media (max-width: 600px) {  
-    .committe {
-        margin-left: 0;
+@media (max-width: 600px) {
+	.gallery, .session, .events, .committe {
+		width: 100%;
+        margin: 0;
     }
 }

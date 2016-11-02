@@ -200,16 +200,15 @@ html, body {
 	display: inline-block;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 .footer .images-group .images:before {
 	font-size: 10pt;
 	position: absolute;
 	font-weight: bold;
-	top: 0px;
 	margin-left: -10px;
-	margin-top: 5px;
+	margin-top: -20px;
 }
 
 .footer .images-group .financial-support:before {
@@ -228,15 +227,34 @@ html, body {
 	text-align: center;
 }
 
-.footer .images-group .images img {
-	border: 5px;
-}
-
-.footer p {
+.footer .text {
 	background-color: #eee;
  	border-top: 1px solid #ddd;
 	padding: 10px;
 	font-size: small;
+	min-height: 15px;
+}
+
+.footer p {
+	display: inline-block;
+}
+
+.footer .left {
+	float: left;
+}
+
+.footer .right {
+	float: right;
+}
+
+.footer * img {
+	max-width: 100%;
+	max-height: 65px;
+}
+
+.footer * .copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
 }
 
 /*********************************************
@@ -359,7 +377,7 @@ html, body {
 	height: 250px;
 }
 
-@media ( max-width : 600px) {
+@media ( max-width : 970px) {
 	.header menu {
 		margin-top: 15px;
 		width: 100%;
@@ -376,5 +394,25 @@ html, body {
 	.content .box-container .box:nth-child(2) {
 		margin: 0 15px;
 		margin-top: 15px;
+	}
+	
+	.footer .text p {
+		text-align: center;
+		display: block;
+		float: none;
+		margin: 0;
+	}
+	
+	.footer .images-group .images {
+		margin: 0px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	
+	.footer .images-group .images:before {
+		display: block;
+		width: 100%;
+		text-align: center;
 	}
 }
