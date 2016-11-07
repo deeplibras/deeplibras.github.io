@@ -3,6 +3,7 @@ title: Sobre
 layout: default
 permalink: /
 lang: pt
+nav: true
 ---
 # Introdução
 

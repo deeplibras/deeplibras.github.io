@@ -2,7 +2,7 @@
 updated_at: 2016-10-23
 
 title:
-  pt: Projeto DeepLIBRAS 
+  pt: Projeto DeepLIBRAS
   en: DeepLIBRAS Project
 description:
   pt: >
@@ -23,8 +23,9 @@ authors:
 url: http://deeplibras.github.io
 
 ### Build settings ###
+## https://github.com/rustygeldmacher/jekyll-contentblocks
 markdown: kramdown
-gems: [jekyll-polyglot]
+gems: [jekyll-polyglot, content-blocks]
 
 ### Multilanguage settings ###
 languages: ["pt", "en"]
