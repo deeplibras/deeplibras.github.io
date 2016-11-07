@@ -1,7 +1,7 @@
 ---
 title: Sobre
 layout: default
-permalink: /about
+permalink: /
 lang: pt
 ---
 # Introdução

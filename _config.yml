@@ -1,7 +1,9 @@
 ### Site settings ###
 updated_at: 2016-10-23
 
-title: DeepLIBRAS
+title:
+  pt: Projeto DeepLIBRAS 
+  en: DeepLIBRAS Project
 description:
   pt: >
     Este projeto tem o objetivo de desenvolver um agente inteligente capaz de
@@ -18,7 +20,7 @@ authors:
   - Matheus da Silva Ferreira
   - Rodrigo Briet
   - Vitor Silvério de Souza
-url: http://deeplibras.github.io # the base hostname & protocol for your site
+url: http://deeplibras.github.io
 
 ### Build settings ###
 markdown: kramdown
