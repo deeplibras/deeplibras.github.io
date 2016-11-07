@@ -125,7 +125,7 @@ html, body {
 	font-weight: 400;
 	margin-bottom: 8px;
 	margin-top: 8px;
-	color: #1a7ea7;	
+	color: #1a7ea7;
 }
 
 .content p {
@@ -203,28 +203,13 @@ html, body {
 	margin-top: 20px;
 }
 
-.footer .images-group .images:before {
+.footer .images-group .image-label{
 	font-size: 10pt;
-	position: absolute;
 	font-weight: bold;
-	margin-left: -10px;
-	margin-top: -20px;
-}
-
-.footer .images-group .financial-support:before {
-	content: "Fomento:";
-}
-
-.footer .images-group .sponsor:before {
-	content: "Patrocinadores:";
-}
-
-.footer .images-group .support:before {
-	content: "Apoio:";
-}
-
-.footer .images-group .images {
-	text-align: center;
+  text-align: left;
+  position: relative;
+  left: -10px;
+  top: -5px;
 }
 
 .footer .text {
@@ -395,24 +380,22 @@ html, body {
 		margin: 0 15px;
 		margin-top: 15px;
 	}
-	
+
 	.footer .text p {
 		text-align: center;
 		display: block;
 		float: none;
 		margin: 0;
 	}
-	
+
 	.footer .images-group .images {
 		margin: 0px;
 		margin-top: 15px;
 		margin-bottom: 15px;
 		width: 100%;
 	}
-	
-	.footer .images-group .images:before {
-		display: block;
-		width: 100%;
+
+	.footer .images-group .image-label {
 		text-align: center;
 	}
 }

@@ -1,0 +1,51 @@
+### Site settings ###
+updated_at: 2016-10-23
+
+title: DeepLIBRAS
+description:
+  pt: >
+    Este projeto tem o objetivo de desenvolver um agente inteligente capaz de
+    traduzir a Língua Brasileira de Sinais para o Português em tempo real.
+    Esperamos que esse projeto possa aproximar as comunidades surdas do Brasil
+    das comunidade ouvintes que não falam LIBRAS.
+  en: >
+    This project aims at developing an intelligent agent able to translate a
+    signal language to a speech-written language in real time. We hope this
+    project approximates deaf communities to communities that do not speak a
+    signal language.
+authors:
+  - Lucas Venezian Povoa
+  - Matheus da Silva Ferreira
+  - Rodrigo Briet
+  - Vitor Silvério de Souza
+url: http://deeplibras.github.io # the base hostname & protocol for your site
+
+### Build settings ###
+markdown: kramdown
+gems: [jekyll-polyglot]
+
+### Multilanguage settings ###
+languages: ["pt", "en"]
+default_lang: "pt"
+exclude_from_localization: ["js", "images", "css", "assets", "_includes", "_layout"]
+parallel_localization: false
+
+### VARIABLES ###
+# Header
+subtitle:
+  pt: Tradução da Língua Brasileira de Sinais com Técnicas de Aprendizagem de Máquina
+  en: Brazilian Sign Language Translation via Machine Learning Techniques
+
+# Footer
+financial:
+  pt: Fomento
+  en: Financial Support
+sponsor:
+  pt: Patricinadores
+  en: Sponsors
+support:
+  pt: Apoio
+  en: Support
+last_update:
+  pt: Última Atualização
+  en: Last Update
