@@ -25,7 +25,7 @@ url: http://deeplibras.github.io
 ### Build settings ###
 ## https://github.com/rustygeldmacher/jekyll-contentblocks
 markdown: kramdown
-gems: [jekyll-polyglot, content-blocks]
+gems: [jekyll-polyglot, jekyll-contentblocks]
 
 ### Multilanguage settings ###
 languages: ["pt", "en"]

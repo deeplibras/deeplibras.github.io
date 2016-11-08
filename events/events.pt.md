@@ -1,5 +1,5 @@
 ---
-title: Events
+title: Eventos
 layout: default
 permalink: /events/
 lang: pt
@@ -25,8 +25,8 @@ Se você quer participar fique atento, o próximo evento será realizado no dia 
 <div class="session list events">
     <h1>Eventos</h1>
     <ul>
-    	<li><a href="#201602" accesskey="201602">II Encontro para Coleta de Sinais da LIBRAS (ECLS)</a></li>
-        <li><a href="/events/ecls1" accesskey="201601">I Encontro para Coleta de Sinais da LIBRAS (ECLS)</a></li>
+    	<li><a href="/events/ecsl2">II Encontro para Coleta de Sinais da LIBRAS (ECLS)</a></li>
+        <li><a href="/events/ecsl1">I Encontro para Coleta de Sinais da LIBRAS (ECLS)</a></li>
     </ul>
-    <button class="eventsPrevious" onclick="eventsPreviousPage()">Anterior</button><button class="eventsNext next" onclick="eventsNextPage()">Próximo</button>
+    <!-- <button class="eventsPrevious" onclick="eventsPreviousPage()">Anterior</button><button class="eventsNext next" onclick="eventsNextPage()">Próximo</button> -->
 </div>

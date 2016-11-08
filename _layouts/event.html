@@ -4,7 +4,25 @@
   {% include header.html %}
 
   <main class="content" aria-label="Content">
-    {{ content }}
+    <div class="session information">
+      <div class="list">
+        {% contentblock address %}
+      </div>
+    </div>
+
+    <div class="session list committe" >
+      <div class="list">
+        {% contentblock committe %}
+      </div>
+    </div>
+
+    <div class="session list">
+      {% contentblock signals %}
+    </div>
+
+    <div class="session full-content">
+      {% contentblock support %}
+    </div>
   </main>
 
-{% include footer.html %}
+  {% include footer.html %}

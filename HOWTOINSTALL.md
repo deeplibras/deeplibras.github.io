@@ -10,11 +10,12 @@
 - Windows:  
 [Ruby Installer](http://rubyinstaller.org/)
 
-#### Install Jekyll:
-Type on Terminal/CMD:
+#### Install Jekyll and Plugins used:
 ````sh
-gem install jekyll;
-gem install jekyll-polyglot;
+gem install jekyll; # The Jekyll
+gem install jekyll-polyglot; # Multilanguage support
+gem install rb-fsevent; # Required by Polyglot
+gem install jekyll-contentblocks; # To make some content divisions to a better "layouting"
 ````
 #### Setup the repository:
 Clone deeplibras.github.io:
@@ -26,7 +27,6 @@ Go to the folder and checkout jekyll-version
 cd deeplibras.github.io;
 git checkout jekyll-version;
 ````
-Pull if necessary.
 #### Start server/watcher:
 ````sh
 jekyll serve
@@ -35,18 +35,3 @@ All of your updates on code will regenerate the site file automatically.
 
 ## And now it's ready to go!
 Just go to `localhost:4000` (or other port if jekyll was with other config) to see the results.
-
-#### Lazy One (Windows)
-Paste on CMD and wait:
-````bash
-gem install jekyll &
-gem install jekyll-polyglot &
-cd %userprofile% &
-mkdir jekyll &
-cd jekyll &
-git clone https://github.com/deeplibras/deeplibras.github.io.git &
-cd deeplibras.github.io &
-git checkout jekyll-version &
-jekyll serve &
-explorer http://localhost:4000
-````
