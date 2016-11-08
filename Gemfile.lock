@@ -44,7 +44,6 @@ DEPENDENCIES
   jekyll (= 3.2.1)
   jekyll-contentblocks
   jekyll-polyglot
-  rb-fsevent
 
 RUBY VERSION
    ruby 2.3.1p112

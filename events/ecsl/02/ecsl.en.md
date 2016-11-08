@@ -30,21 +30,21 @@ lang: en
 
 {% contentfor signals %}
 # Collected signals
-  - Oi, bom dia! (Hi, good morning!)
-  - Seu nome é bonito. (Your name is pretty.)
-  - Você estava bravo ontem? (Were you angry yesterday?)
-  - Surdos são bem vindos! (Deaf are welcome!)
-  - Bom fim de semana! (Have a good weekend!)
-  - Eu gosto do meu nome. (I like my name.)
-  - E stou com fome, preciso comer. (I am hungry, I need to eat.)
-  - Eu tenho dois primos. (I have two cousins.)
-  - Você tem amigos surdos? (Do you have deaf friend?)
-  - Pergunte ao professor se amanhã tem aula. (Ask the professor if tomorrow has classes.)
-  - Eu ajudo você com a sua lição. (I help you with your homework.)
-  - Você tem filhos? (Do you have children?)
-  - Domingo eu não trabalho, dia de folga. (Sunday I do not work, day off.)
-  - Eu pesquiso na internet. (I search at Internet.)
-  - Você vai comprar um carro novo ou um carro usado? (Will you buy a new or used car?)
+  - Oi, bom dia! (*Hi, good morning!*)
+  - Seu nome é bonito. (*Your name is pretty.*)
+  - Você estava bravo ontem? (*Were you angry yesterday?*)
+  - Surdos são bem vindos! (*Deaf are welcome!*)
+  - Bom fim de semana! (*Have a good weekend!*)
+  - Eu gosto do meu nome. (*I like my name.*)
+  - E stou com fome, preciso comer. (*I am hungry, I need to eat.*)
+  - Eu tenho dois primos. (*I have two cousins.*)
+  - Você tem amigos surdos? (*Do you have deaf friend?*)
+  - Pergunte ao professor se amanhã tem aula. (*Ask the professor if tomorrow has classes.*)
+  - Eu ajudo você com a sua lição. (*I help you with your homework.*)
+  - Você tem filhos? (*Do you have children?*)
+  - Domingo eu não trabalho, dia de folga. (*Sunday I do not work, day off.*)
+  - Eu pesquiso na internet. (*I search at Internet.*)
+  - Você vai comprar um carro novo ou um carro usado? (*Will you buy a new or used car?*)
 {:.signal}
 {% endcontentfor %}
 

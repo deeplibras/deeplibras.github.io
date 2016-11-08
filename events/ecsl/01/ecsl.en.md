@@ -25,32 +25,32 @@ lang: en
 
 {% contentfor signals %}
 # Collected signals
-  - Oi
-  - Dia
-  - Pensar
-  - Imaginar
-  - Sonhar
-  - Futuro
-  - Qual é o seu nome?
-  - Bem-vindo
-  - Fome
-  - Amig@
-  - Tudo bom
-  - Qual é o seu sinal?
-  - Mostrar
-  - Poder
-  - Precisar
-  - Trabalhar
-  - Falar
-  - Federal
-  - Domingo
-  - Bonito
-  - Gostar
-  - Deficiente
-  - Pessoa
-  - Séri@
-  - Feliz
-  - Brasil
+  - Oi (*Hi*)
+  - Dia (*Day*)
+  - Pensar (*to Think*)
+  - Imaginar (*to Imagine*)
+  - Sonhar (*to Dream*)
+  - Futuro (*Future*)
+  - Qual é o seu nome? (*What's your name?*)
+  - Bem-vindo (*Welcome*)
+  - Fome (*Hunger*)
+  - Amig@ (*Friend*)
+  - Tudo bom (*Everything's good*)
+  - Qual é o seu sinal? (*What's your signal?*)
+  - Mostrar (*to Show*)
+  - Poder (*Can*)
+  - Precisar (*to Need*)
+  - Trabalhar (*to Work*)
+  - Falar (*to Speak*)
+  - Federal (*Federal*)
+  - Domingo (*Sunday*)
+  - Bonito (*Pretty*)
+  - Gostar (*to Like*)
+  - Deficiente (*Deficient*)
+  - Pessoa (*Person*)
+  - Séri@ (*Serious*)
+  - Feliz (*Happy*)
+  - Brasil (*Brazil*)
 {:.signal}
 {% endcontentfor %}
 
