@@ -36,7 +36,7 @@ button.next {
     display: inline-block;
 }
 
-.session * b {
+.session * b, .session * strong {
 	font-weight: bold;
 }
 

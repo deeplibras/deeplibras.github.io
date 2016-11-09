@@ -1,0 +1,11 @@
+{% assign dates     = include.date | split: '-' %}
+{% assign year      = dates[0] %}
+{% assign month     = dates[1] | minus: 1 %}
+{% assign day       = dates[2] %}
+{% assign monthName = site.data.months[month][site.active_lang] %}
+
+{% if site.active_lang == 'pt' %}
+{{ day }} de {{ monthName }} de {{ year }}
+{% else %}
+{{ monthName | capitalize }} {{ day }}, {{ year }}
+{% endif %}
