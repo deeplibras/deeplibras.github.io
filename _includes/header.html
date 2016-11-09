@@ -9,15 +9,20 @@
     <menu>
       {% for node in site.pages %}
         {% if node.nav %}
+
           {% if page.url == node.url %}
             <li class="active">
-              <a href="{{ node.url }}" title="{{ node.title }}" accesskey="{{ node.title }}">{{ node.title }}</a>
-            </li>
           {% else %}
             <li>
-              <a href="{{ node.url }}" title="{{ node.title }}" accesskey="{{ node.title }}">{{ node.title }}</a>
-            </li>
           {% endif %}
+
+          {% if node.title contains 'pt' %}
+            <a href="{{ node.url }}" title="{{ node.title[site.active_lang] }}" accesskey="{{ node.title[site.active_lang] }}">{{ node.title[site.active_lang] }}</a>
+          {% else %}
+            <a href="{{ node.url }}" title="{{ node.title }}" accesskey="{{ node.title }}">{{ node.title }}</a>
+          {% endif %}
+
+          </li>
         {% endif %}
       {% endfor %}
     </menu>

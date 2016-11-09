@@ -5,7 +5,11 @@
   {% if page.url == '/' %}
     <title>{{ site.title[site.active_lang] }}</title>
   {% else %}
-    <title>{{ site.title[site.active_lang] }} - {{ page.title }}</title>
+    {% if page.title contains 'pt' %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title[site.active_lang] }}</title>
+      {% else %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title }}</title>
+    {% endif %}
   {% endif %}
 
   <meta charset="UTF-8">
