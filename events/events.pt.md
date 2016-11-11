@@ -1,9 +1,10 @@
 ---
-title: Eventos
+title:
+  pt: Eventos
+  en: Events
 layout: default
 permalink: /events/
 lang: pt
-nav: true
 ---
 # Encontro para Coleta de Sinais da LIBRAS (ECLS)
 Com a finalidade de obter dados da LIBRAS para o desenvolvimento do projeto de pesquisa, os membros do DeepLIBRAS realizam, esporadicamente, encontros para reunir surdos e não-surdos que dominam a língua de sinais do Brasil para gravar sinais da LIBRAS utilizando câmeras de cor e profundidade.
