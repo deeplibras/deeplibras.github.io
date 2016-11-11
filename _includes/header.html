@@ -1,31 +1,30 @@
 <div class="image-container">
   <img class="logo" src="/images/deeplibras-white.png" alt="DeepLIBRAS"></img>
-  <h1>{{ site.subtitle[site.active_lang] }}</h1>
+  <h1>{{ site.data.lang.subtitle[site.active_lang] }}</h1>
 </div>
 
 <div class="wrap-header">
   <div class="header">
 
-    <menu>
-      {% for node in site.pages %}
-        {% if node.nav %}
-
+    <nav>
+      {% for nav in site.nav  %}
+        {% assign item = nav %}
+        {% assign pages = site.pages | where: 'permalink', item %}
+        {% for node in pages %}
           {% if page.url == node.url %}
             <li class="active">
           {% else %}
             <li>
           {% endif %}
-
           {% if node.title contains 'pt' %}
             <a href="{{ node.url }}" title="{{ node.title[site.active_lang] }}" accesskey="{{ node.title[site.active_lang] }}">{{ node.title[site.active_lang] }}</a>
           {% else %}
             <a href="{{ node.url }}" title="{{ node.title }}" accesskey="{{ node.title }}">{{ node.title }}</a>
           {% endif %}
-
           </li>
-        {% endif %}
+        {% endfor %}
       {% endfor %}
-    </menu>
+    </nav>
 
     <div class="flags">
       <!-- TODO: Need to be rewrite -->

@@ -43,18 +43,18 @@ html, body {
 	flex-wrap: wrap;
 }
 
-.header menu {
+.header nav {
 	list-style: none;
 	display: flex;
 	margin-right: auto;
 	flex-wrap: wrap;
 }
 
-.header menu li {
+.header nav li {
 	vertical-align: middle;
 }
 
-.header menu li a {
+.header nav li a {
 	display: block;
 	padding: 15px;
 	text-decoration: none;
@@ -62,12 +62,12 @@ html, body {
 	color: #FFFFFF;
 }
 
-.header menu li:hover {
+.header nav li:hover {
 	background-color: #1a7ea7;
 	color: white;
 }
 
-.header menu li.active {
+.header nav li.active {
 	background-color: #1a7ea7;
 	color: white;
 }
@@ -258,7 +258,7 @@ html, body {
 }
 
 .team .role-group h1 {
-	font-size: x-large;
+	font-size: 24px;
 }
 
 .team .role-group figure {
@@ -363,11 +363,11 @@ html, body {
 }
 
 @media ( max-width : 970px) {
-	.header menu {
+	.header nav {
 		margin-top: 15px;
 		width: 100%;
 	}
-	.header menu li {
+	.header nav li {
 		width: 100%;
 	}
 	.header .flags {
