@@ -1,14 +1,14 @@
 ---
-title: I Encontro para Coleta de Sinais da LIBRAS
+title: I Meeting for Collecting Signs of Brazilian Sign Language
 layout: event
 permalink: /events/ecsl1
 lang: en
 ---
 {% contentfor address %}
-# I Encontro para Coleta de Sinais da LIBRAS (ECSL)
-  - **Local:** Instituto Federal de São Paulo - Câmpus Caraguatatuba  
-  Avenida Bahia, 1739 - Bairro Indaiá  
-  Caraguatatuba, São Paulo - Brasil
+# I Meeting for Collecting Signs of Brazilian Sign Language
+  - **Address:** Instituto Federal de São Paulo - Câmpus Caraguatatuba  
+  Avenida Bahia, 1739 - Indaiá  
+  Caraguatatuba, São Paulo - Brazil
   - **Date:** May 9th, 2016
   - **Time:** 7:30 PM
 {% endcontentfor %}

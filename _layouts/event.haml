@@ -1,0 +1,19 @@
+{% include head.html %}
+.container
+  {% haml header.haml %}
+  %main.content
+    .session.information
+      .list
+        {% contentblock address %}
+
+    .session.list.committe
+      .list
+        {% contentblock committe %}
+
+    .session.list
+      {% contentblock signals %}
+
+    .session.full-content
+      {% contentblock support %}
+  {{ content }}  
+  {% haml footer.haml %}

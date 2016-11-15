@@ -1,9 +1,11 @@
 ### Site settings ###
 updated_at: 2016-10-23
 
+# Meta Tags
 title:
   pt: Projeto DeepLIBRAS
   en: DeepLIBRAS Project
+
 description:
   pt: >
     Este projeto tem o objetivo de desenvolver um agente inteligente capaz de
@@ -15,40 +17,24 @@ description:
     signal language to a speech-written language in real time. We hope this
     project approximates deaf communities to communities that do not speak a
     signal language.
+
 authors:
   - Lucas Venezian Povoa
   - Matheus da Silva Ferreira
   - Rodrigo Briet
   - Vitor Silvério de Souza
+
 url: http://deeplibras.github.io
 
-### Build settings ###
-## https://github.com/rustygeldmacher/jekyll-contentblocks
+### Build Settings ###
 markdown: kramdown
-gems: [jekyll-polyglot, jekyll-contentblocks]
+gems:
+  - jekyll-polyglot
+  - jekyll-contentblocks
+  - jekyll-haml
 
-### Multilanguage settings ###
+### Multilanguage Settings ###
 languages: ["pt", "en"]
 default_lang: "pt"
 exclude_from_localization: ["js", "images", "css", "assets", "_includes", "_layout"]
 parallel_localization: false
-
-### VARIABLES ###
-# Header
-subtitle:
-  pt: Tradução da Língua Brasileira de Sinais com Técnicas de Aprendizagem de Máquina
-  en: Brazilian Sign Language Translation via Machine Learning Techniques
-
-# Footer
-financial:
-  pt: Fomento
-  en: Financial Support
-sponsor:
-  pt: Patricinadores
-  en: Sponsors
-support:
-  pt: Apoio
-  en: Support
-last_update:
-  pt: Última Atualização
-  en: Last Update

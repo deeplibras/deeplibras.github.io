@@ -1,4 +1,5 @@
 # Página Oficial do DeepLIBRAS
+[![Build Status](https://travis-ci.org/Pliavi/deeplibras.github.io.svg?branch=jekyll-version)](https://travis-ci.org/Pliavi/deeplibras.github.io)
 
 Este projeto é a página oficial do projeto de pesquisa DeepLIBRAS.
 

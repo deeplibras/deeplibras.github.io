@@ -1,0 +1,30 @@
+%footer
+  .images-group
+    .images.financial-support
+      .image-label
+        {{ site.data.lang.financial[site.active_lang] }}:
+      %a(href="http://ifsp.edu.br")
+        %img(src="/images/sponsor/ifsp.png")
+
+    .images.sponsor
+      .image-label
+        {{ site.data.lang.financial[site.active_lang] }}:
+      %a(href="http://github.com")
+        %img(src="/images/sponsor/github.png")
+
+    .images.support
+      .image-label
+        {{ site.data.lang.financial[site.active_lang] }}:
+      %a(href="http://caraguatatuba.sp.gov.br")
+        %img(src="/images/sponsor/caragua.png")
+
+  .text
+    %p.left
+      %span.copyleft
+        &copy;
+      2016 DeepLIBRAS
+    %p.right
+      {{ site.data.lang.last_update[site.active_lang] }}:
+      {% include date date=site.updated_at %}
+
+%script(type="text/javascript" src="/js/lightbox.min.js")

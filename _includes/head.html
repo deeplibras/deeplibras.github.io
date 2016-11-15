@@ -5,7 +5,11 @@
   {% if page.url == '/' %}
     <title>{{ site.title[site.active_lang] }}</title>
   {% else %}
-    <title>{{ site.title[site.active_lang] }} - {{ page.title }}</title>
+    {% if page.title contains 'pt' %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title[site.active_lang] }}</title>
+      {% else %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title }}</title>
+    {% endif %}
   {% endif %}
 
   <meta charset="UTF-8">
@@ -22,6 +26,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/lightbox.css">
   <link rel="stylesheet" href="/css/ecsl.css">
 
   <!-- Favicon -->
@@ -29,7 +34,7 @@
 
   <!-- Javascript -->
   <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
-  <script type="text/javascript" src="/js/lightbox.min.js"></script>
   <script type="text/javascript" src="/js/pagination.js"></script>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
   {% include google-analytics.html %}
 </head>

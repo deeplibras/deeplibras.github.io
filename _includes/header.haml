@@ -1,0 +1,45 @@
+.image-container
+  %img.logo(src="/images/deeplibras-white.png" alt="DeepLIBRAS")
+  %h1
+    {{ site.data.lang.subtitle[site.active_lang] }}
+    
+.wrap-header
+  %header
+    %nav
+      %ul
+        {% assign sorted_pages = site.pages | sort:"nav" | where_exp: "item", "item.nav > 0" %}
+        {% for node in sorted_pages %}
+
+        {% if page.url == node.url %}
+        {% assign active = 'active' %}
+        {% else %}
+        {% assign active = '' %}
+        {% endif %}
+
+        {% if site.active_lang == site.default_lang %}
+        {% assign url = node.url %}
+        {% else %}
+        {% assign url =  node.url | prepend: site.active_lang | prepend: "/" %}
+        {% endif %}
+
+        {% if node.title contains 'pt' %}
+        {% assign title = node.title[site.active_lang] %}
+        {% else %}
+        {% assign title = node.title %}
+        {% endif %}
+
+        %li(class="{{ active }}")
+          %a(href="{{ url }}" title="{{ title }}")
+            {{ title }}
+          {% endfor %}
+
+    .flags
+      {% for language in site.languages %}
+      {% if language == site.default_lang %}
+      {% assign link = site.baseurl | append: page.url %}
+      {% else %}
+      {% assign link = site.baseurl | append: "/" | append: language | append: page.url %}
+      {% endif %}
+      %a(href="{{ link }}")
+        %img(src="/images/icon/{{ language }}.png" alt="{{ language }}" height="24" width="24")
+      {% endfor %}

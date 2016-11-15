@@ -23,3 +23,4 @@ gem "jekyll", "3.2.1"
 # Plugins
 gem "jekyll-polyglot"
 gem "jekyll-contentblocks"
+gem "jekyll-haml"
