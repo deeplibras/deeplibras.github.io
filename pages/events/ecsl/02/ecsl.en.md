@@ -1,16 +1,16 @@
 ---
-title: II Encontro para Coleta de Sinais da LIBRAS
+title: II Meeting for Collecting Signs of Brazilian Sign Language
 layout: event
 permalink: /events/ecsl2
 lang: en
 ---
 {% contentfor address %}
-# II Encontro para Coleta de Sinais da LIBRAS (ECSL)
-- **Local:** Secretaria dos Direitos da Pessoa com Deficiência e do Idoso  
-  Rua Jorge Burihan, n. 10 - Jardim Jaqueira  
-  Caraguatatuba, São Paulo - Brasil  
-- **Date:** November 7th, 2016
-- **Time:** 6:00 PM
+# II Meeting for Collecting Signs of Brazilian Sign Language (ECSL)
+  - **Address:** Secretaria dos Direitos da Pessoa com Deficiência e do Idoso  
+  Rua Jorge Burihan, 10 - Jardim Jaqueira  
+  Caraguatatuba, São Paulo - Brazil  
+  - **Date:** November 7th, 2016
+  - **Time:** 6:00 PM
 {% endcontentfor %}
 
 {% contentfor committe %}

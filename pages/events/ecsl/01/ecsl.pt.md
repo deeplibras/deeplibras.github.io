@@ -7,7 +7,7 @@ lang: pt
 {% contentfor address %}
 # I Encontro para Coleta de Sinais da LIBRAS (ECSL)
   - **Local:** Instituto Federal de São Paulo - Câmpus Caraguatatuba  
-  Avenida Bahia, 1739 - Bairro Indaiá  
+  Avenida Bahia, 1739 - Indaiá  
   Caraguatatuba, São Paulo - Brasil
   - **Data:** 9 de maio de 2016
   - **Horário:** 19:30

@@ -6,8 +6,8 @@ lang: pt
 ---
 {% contentfor address %}
 # II Encontro para Coleta de Sinais da LIBRAS (ECSL)
-- **Local:** Secretaria dos Direitos da Pessoa com Deficiência e do Idoso  
-  Rua Jorge Burihan, n. 10 - Jardim Jaqueira  
+  - **Local:** Secretaria dos Direitos da Pessoa com Deficiência e do Idoso  
+  Rua Jorge Burihan, 10 - Jardim Jaqueira  
   Caraguatatuba, São Paulo - Brasil  
   - **Data:** 7 de novembro de 2016
   - **Horário:** 18:00
