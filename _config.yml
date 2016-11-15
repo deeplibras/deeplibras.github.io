@@ -26,12 +26,12 @@ authors:
 
 url: http://deeplibras.github.io
 
-# Navbar, based on permalink
-nav: ["/", "/events/", "/team/", "/contact/"]
-
 ### Build Settings ###
 markdown: kramdown
-gems: [jekyll-polyglot, jekyll-contentblocks]
+gems:
+  - jekyll-polyglot
+  - jekyll-contentblocks
+  - jekyll-haml
 
 ### Multilanguage Settings ###
 languages: ["pt", "en"]
