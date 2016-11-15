@@ -1,0 +1,10 @@
+{% assign path = "../../images/gallery/" %}
+.session.gallery
+  %h1
+    {{ site.data.lang.gallery[site.active_lang] }}
+    %ul
+      {% for photo in site.data.gallery %}
+      %li
+        %a(href="{{ path }}{{ photo.name }}.jpg" data-lightbox="ECSL-1")
+          %img(src="{{ path }}{{ photo.name }}_thumb.png" alt="{{ photo.desc }}")
+      {% endfor %}
