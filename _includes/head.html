@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}">
+<head>
+  <!-- Meta tags -->
+  {% if page.url == '/' %}
+    <title>{{ site.title[site.active_lang] }}</title>
+  {% else %}
+    {% if page.title contains 'pt' %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title[site.active_lang] }}</title>
+      {% else %}
+      <title>{{ site.title[site.active_lang] }} - {{ page.title }}</title>
+    {% endif %}
+  {% endif %}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description[site.active_lang] }}">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <meta name="author" content="{{ site.authors | join: ', ' }}">
+  <meta name="language" content="{{ site.active_lang }}">
+  <meta name="robots" content="index, follow">
+  <meta name="url" content="{{ site.url }}">
+  {% for lang in site.languages %} {% if lang == site.default_lang %} {% continue %} {% endif %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink }}" />
+  {% endfor %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/lightbox.css">
+  <link rel="stylesheet" href="/css/ecsl.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" sizes="16x16">
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="/js/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="/js/pagination.js"></script>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  {% include google-analytics.html %}
+</head>

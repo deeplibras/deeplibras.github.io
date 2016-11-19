@@ -1,5 +1,5 @@
 function onLoad() {
-	
+
 	$.ajax({
 		url : "./footer.html",
 		method : "GET",
@@ -10,7 +10,7 @@ function onLoad() {
 	}).done(function(data) {
 		$(".content").after(data);
 	});
-	
+
 	$(".header menu li a").each(function() {
 		$(this).click(function() {
 
@@ -27,9 +27,9 @@ function onLoad() {
 			}).done(function(data) {
 				$(".content").html(data);
 			});
-			
+
 			$(".header menu li.active").removeClass("active");
-			
+
 			$(this).parent().addClass("active");
 		})
 	});
@@ -37,7 +37,7 @@ function onLoad() {
 	var url = "about.html";
 
 	var section = window.location.hash.substr(1);
-	
+
 	if (section != "")
 		url = section + ".html";
 	else
@@ -47,13 +47,13 @@ function onLoad() {
 		url : url,
 		method : "GET"
 	}).done(function(data) {
-		
+
 		$("menu li").removeClass("active");
 		$("a[accesskey=" + section + "]").parent().addClass("active");
 		$(".content").html(data);
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
-	
+
 	$(".flags a").each(function() {
 
 		$(this).click(function(e) {

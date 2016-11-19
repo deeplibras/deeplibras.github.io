@@ -1,0 +1,47 @@
+members:
+  # Project Chairs
+  - name: Lucas Venezian Povoa
+    photo: venezian
+    role: chairman
+
+  # Researchers
+  - name: Eduardo Pereira de Sousa
+    photo:
+    role: researcher
+  - name: Izabela Cristina Alves
+    photo:
+    role: researcher
+  - name: Luciana Brasil Rebelo dos Santos
+    photo: luciana
+    role: researcher
+
+  # Technical Professionals
+  - name: Danilo Monteiro da Silva
+    photo:
+    role: technical
+  - name: Luiz Gustavo Nicola Mendes
+    photo:
+    role: technical
+
+  # Undergraduate Students
+  - name: Beatriz Cristina Rodrigues
+    photo: beatriz
+    role: student
+  - name: Matheus da Silva Ferreira
+    photo:
+    role: student
+  - name: Mayra Dantas Bueno
+    photo: mayra
+    role: student
+  - name: Nikolas Ariel Garcia Lencioni
+    photo: nikolas
+    role: student
+  - name: Rodrigo Briet
+    photo: rodrigo
+    role: student
+  - name: Uriel Cairê Balan Calvi
+    photo: uriel
+    role: student
+  - name: Vitor Silvério de Souza
+    photo: vitor
+    role: student

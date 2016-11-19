@@ -1,0 +1,21 @@
+---
+title: Equipe
+layout: default
+permalink: /team/
+lang: pt
+nav: 3
+---
+<div class="team">
+  {% for role in site.data.roles %}
+    {% assign members = site.data.team.members | where: 'role', role.index %}
+    <div class="role-group">
+      <h1>{{ role[site.active_lang] }}</h1>
+      {% for member in members %}
+        <figure>
+          <img src="/images/person/{{ member.photo | default: 'avatar' }}.jpg" width="100" height="100"/>
+          <figcaption class="name">{{ member.name }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
