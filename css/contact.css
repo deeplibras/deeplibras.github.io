@@ -1,0 +1,20 @@
+.contact-list ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.contact-list ul img {
+  padding: 5px 10px;
+}
+.contact-list ul span {
+  line-height: 34px;
+  vertical-align: top;
+  display: inline-block;
+}
+.map {
+  width: 100%;
+  border: 0;
+  display: inline-block;
+  border-radius: 5px;
+  height: 250px;
+}
