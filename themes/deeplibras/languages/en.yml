@@ -1,0 +1,22 @@
+header:
+  subtitle: Brazilian Sign Language Translation via Machine Learning Techniques
+
+nav:
+  about: About
+  team: Team
+  events: Events
+  contact: Contact
+
+footer:
+  promotion: Promotion
+  sponsor: Sponsor
+  support: Support
+  last_update: Last update
+
+roles:
+  chair: Project Chair
+  researchers: Researchers 
+  technical: Technical Professionals
+  undergraduates: Undergraduate Students
+
+keepintouch: Keep In Touch!

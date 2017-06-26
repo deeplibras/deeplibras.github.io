@@ -1,0 +1,22 @@
+header:
+  subtitle: Tradução da Língua Brasileira de Sinais com Técnicas de Aprendizagem de Máquina
+
+nav:
+  about: Sobre
+  team: Equipe
+  events: Eventos
+  contact: Contato
+
+footer:
+  promotion: Fomento
+  sponsor: Patrocinador
+  support: Apoio
+  last_update: Última atualização
+
+roles:
+  chair: Coordenador
+  researchers: Pesquisadores 
+  technical: Profissionais Técnicos
+  undergraduates: Estudantes de Graduação
+
+keepintouch: Mantenha Contato!
